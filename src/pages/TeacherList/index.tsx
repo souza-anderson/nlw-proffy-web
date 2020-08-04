@@ -1,8 +1,7 @@
 import React from 'react';
 
 import PageHeader from '../../components/PageHeader';
-
-import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
+import TeacherItem from '../../components/TeacherItem';
 
 import './styles.css';
 
@@ -17,41 +16,22 @@ function TeacherList() {
                     </div>
 
                     <div className="input-block">
-                        <label htmlFor="week-day">Matérias</label>
+                        <label htmlFor="week-day">Dia da semana</label>
                         <input type="text" id="week-day" />
                     </div>
 
                     <div className="input-block">
-                        <label htmlFor="time">Matérias</label>
+                        <label htmlFor="time">Hora</label>
                         <input type="text" id="time" />
                     </div>
                 </form>
             </PageHeader>
 
             <main>
-                <article className="teacher-item">
-                    <header>
-                        <img src="" alt="Anderson Souza"/>
-                        <strong>Anderson Souza</strong>
-                        <span>Química</span>                        
-                    </header>
-
-                    <p>
-                        Entusiasta das melhores tecnologias de química avançada
-                        <br /><br />
-                        Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências.
-                    </p>
-
-                    <footer>
-                        <p>
-                            Preçco/hora
-                            <strong>R$ 20,00</strong>
-                        </p>
-                        <button type="button">
-                            <img src={whatsappIcon} alt=""/>
-                        </button>
-                    </footer>
-                </article>
+                <TeacherItem />
+                <TeacherItem />
+                <TeacherItem />
+                <TeacherItem />
             </main>
         </div>
     );
